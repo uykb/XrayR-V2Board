@@ -1,44 +1,4 @@
 # XrayR-V2Board
-用于V2Board的XrayR一键脚本
-
-![muyI2Z](https://s3.missuo.me/images/muyI2Z.jpg)
-
-## 说明
-1. 感谢 `XrayR` 所有作者的贡献
-2. 感谢 `XrayR-release` 提供的一键脚本
-3. 本脚本是基于 `XrayR-release` 修改的
-4. 适用于 `V2Board`
-5. 本仓库默认使用最新版 `XrayR` 
-
-## 更新
-### 2022年5月19日
-- 移除自主选择是否开启 `AEAD` 加密，强制开启 `AEAD`
-
-### 2022年4月27日
-- 作者删库，本脚本启用备份方案，不受影响 
-- 我的 [XrayR备份](https://github.com/missuo/XrayR)
-
-### 2022年4月13日
-- 增加了 `ARM64` 的支持（例如Oracle ARM可以完美安装）
-
-### 2022年2月28日
-- 修改`AEAD`加密默认选择（不输入情况下默认开启）
-
-### 2022年2月2日
-- 可选择关闭`AEAD`加密(官方脚本默认开启，本脚本默认关闭)
-
-### 2021年12月15日
-- 可选择`V2ray`、`Shadowsocks`、`Trojan`(官方脚本默认V2ray，本脚本默认V2ray)
-
-### 2021年5月31日
-- 完成脚本
-
-## 原项目
-[XrayR-project/XrayR](https://github.com/XrayR-project/XrayR)
-
-[XrayR-project/XrayR-release](https://github.com/XrayR-project/XrayR-release)
-
-## 功能
 1. 无需每次配置面板URL和TOKEN（一次永久生效）
 2. 无需在配置文件中修改节点ID
 
@@ -52,17 +12,17 @@ ApiKey: "YOUR_TOKEN" # 修改这里
 
 2. 修改 `install.sh` 文件的203行，将用户名 `missuo` 修改为你自己的GitHub用户名。
 ```
-wget https://cdn.jsdelivr.net/gh/missuo/XrayR-V2Board/config.yml -O /etc/XrayR/config.yml
+wget https://cdn.jsdelivr.net/gh/uykb/XrayR-V2Board/config.yml -O /etc/XrayR/config.yml
 ```
 
 3. 修改下面链接的用户名 `missuo` 为你自己的GitHub用户名，完成配置一键安装脚本命令。
 ### x86_64
 ```
-bash <(curl -Ls https://cdn.jsdelivr.net/gh/missuo/XrayR-V2Board/install.sh)
+bash <(curl -Ls https://cdn.jsdelivr.net/gh/uykb/XrayR-V2Board/install.sh)
 ```
 ### ARM_64
 ```
-bash <(curl -Ls https://cdn.jsdelivr.net/gh/missuo/XrayR-V2Board/install-arm.sh)
+bash <(curl -Ls https://cdn.jsdelivr.net/gh/uykb/XrayR-V2Board/install-arm.sh)
 ```
 
 4. 在 `V2Board` 面板上完成基本节点信息的填写。
