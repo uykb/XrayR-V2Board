@@ -181,7 +181,6 @@ install_XrayR() {
     echo "---------------------------"
     echo ""
     
-    
     # 关闭AEAD强制加密
     # echo "选择是否关闭AEAD强制加密(默认开启AEAD)"
     # echo ""
