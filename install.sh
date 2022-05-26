@@ -218,8 +218,8 @@ install_XrayR() {
     echo "正在尝试写入配置文件..."
     wget https://cdn.jsdelivr.net/gh/uykb/XrayR-V2Board/config.yml -O /etc/XrayR/config.yml
     sed -i "s/NodeID:.*/NodeID: ${node_id}/g" /etc/XrayR/config.yml
-    sed -i "s/NodeType:.*/NodeType: "${node_type}"/g" /etc/XrayR/config.yml
-    sed -i "s/CertDomain:.*/CertDomain: ${node_domain}/g" /etc/XrayR/config.yml
+    sed -i "s/NodeType:.*/NodeType: ${node_type}/g" /etc/XrayR/config.yml
+    sed -i "s/CertDomain:.*/CertDomain: "${node_domain}/g"" /etc/XrayR/config.yml
     echo ""
     echo "写入完成，正在尝试重启XrayR服务..."
     echo
