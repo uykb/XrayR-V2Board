@@ -181,21 +181,6 @@ install_XrayR() {
     echo "---------------------------"
     echo ""
     
-    # 设置域名SSL
-    echo "填写域名"
-    echo ""
-    read -p "输入域名:" node_domain
-    [ -z "${node_domain}" ]
-    
-    # 如果不输入默认为usa.lfx1848.cc
-    if [ ! $node_domain ]; then 
-    node_type="usa.lfx1848.cc"
-    fi
-
-    echo "---------------------------"
-    echo "您的域名为 ${node_domain}"
-    echo "---------------------------"
-    echo ""
     
     # 关闭AEAD强制加密
     # echo "选择是否关闭AEAD强制加密(默认开启AEAD)"
@@ -219,7 +204,6 @@ install_XrayR() {
     wget https://cdn.jsdelivr.net/gh/uykb/XrayR-V2Board/config.yml -O /etc/XrayR/config.yml
     sed -i "s/NodeID:.*/NodeID: ${node_id}/g" /etc/XrayR/config.yml
     sed -i "s/NodeType:.*/NodeType: ${node_type}/g" /etc/XrayR/config.yml
-    sed -i "s/CertDomain:.*/CertDomain: ${node_domain}/g" /etc/XrayR/config.yml
     echo ""
     echo "写入完成，正在尝试重启XrayR服务..."
     echo
