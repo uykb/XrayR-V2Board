@@ -18,7 +18,7 @@ wget https://cdn.jsdelivr.net/gh/uykb/XrayR-V2Board/config.yml -O /etc/XrayR/con
 3. 修改下面链接的用户名 `missuo` 为你自己的GitHub用户名，完成配置一键安装脚本命令。
 ### x86_64
 ```
-bash <(curl -Ls https://cdn.jsdelivr.net/gh/uykb/XrayR-V2Board/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/uykb/XrayR-V2Board/main/install.sh)
 ```
 ### ARM_64
 ```
